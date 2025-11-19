@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>OrionWave — Créer votre univers digital</title>
+<link rel="icon" href="https://i.imgur.com/JYeZGjc.png" />
+<style>
+:root{--bg:#070709;--panel:#120614;--violet:#6B29F2;--blue:#3A6FF2;--muted:#cfcbe0;--glass:rgba(255,255,255,0.03)}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;background:var(--bg);color:#fff}
+header{display:flex;align-items:center;justify-content:space-between;padding:18px 28px;background:linear-gradient(90deg,#0f0710,#120614);border-bottom:3px solid var(--violet)}
+.brand{display:flex;gap:12px;align-items:center}
+.brand img{height:56px}
+nav a{color:var(--muted);text-decoration:none;margin:0 10px;font-weight:700}
+nav a:hover{color:var(--violet)}
+.ticker{background:linear-gradient(90deg,rgba(107,41,242,0.06),rgba(58,111,242,0.04));padding:8px 0;border-top:1px solid rgba(255,255,255,0.02);overflow:hidden}
+.ticker .inner{display:inline-block;white-space:nowrap;animation:scroll 20s linear infinite}
+.ticker span{display:inline-block;margin:0 40px;color:var(--violet);font-weight:800}
+@keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.hero{padding:80px 20px;text-align:center;background:linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.45)),url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1600&q=80') center/cover}
+.hero h1{font-size:2.6rem;margin:8px 0;color:#fff;text-shadow:0 6px 30px rgba(0,0,0,0.7)}
+.hero p{color:var(--muted);font-size:1.05rem;margin:0 0 18px}
+.cta{display:inline-block;padding:12px 20px;border-radius:10px;background:var(--violet);color:#fff;font-weight:800;text-decoration:none}
+main{max-width:1100px;margin:36px auto;padding:0 20px}
+.card{background:linear-gradient(180deg,#120614,#15051a);border-radius:12px;padding:18px;margin:18px 0;border:1px solid var(--glass)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+h2{color:var(--violet)}
+.small{color:var(--muted)}
+footer{padding:22px;text-align:center;background:#0f0710;border-top:3px solid var(--violet);margin-top:40px}
+@media(max-width:700px){header{flex-direction:column;gap:12px}nav{display:flex;flex-wrap:wrap;justify-content:center}}
+</style>
+</head>
+<body>
+<header>
+<div class="brand">
+<img src="https://i.imgur.com/JYeZGjc.png" alt="OrionWave logo"/>
+<div>
+<div style="font-weight:800;font-size:1.05rem">OrionWave</div>
+<div class="small">Créer votre univers digital</div>
+</div>
+</div>
+<nav>
+<a href="index.html">Accueil</a>
+<a href="about.html">À propos</a>
+<a href="services.html">Services</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="tarifs.html">Tarifs</a>
+<a href="contact.html">Contact</a>
+<a href="avis.html">Avis</a>
+</nav>
+</header>
+
+
+<div class="ticker" aria-hidden="true">
+<div class="inner">
+<span>Pack Starter — 1 page — 49,99€</span>
+<span>Pack Pro — 3-5 pages — 99€</span>
+<span>Pack Premium — 149€ - 199€</span>
+<span>Prix variables selon demandes — Devis personnalisé</span>
+<!-- duplicated to ensure seamless scroll -->
+<span>Pack Starter — 1 page — 49,99€</span>
+<span>Pack Pro — 3-5 pages — 99€</span>
+</div>
+</div>
+
+
+<section class="hero">
+<h1>On conçoit des sites vitrines pour entrepreneurs & teams</h1>
+<p>OrionWave crée des sites modernes, rapides et optimisés — design futuriste inspiré des nébuleuses.</p>
+<a class="cta" href="services.html">Voir nos services</a>
+</section>
+
+
+<main>
+<div class="card">
+<h2>Ce que nous faisons</h2>
+<p class="small">Nous concevons des sites vitrines sur-mesure pour entrepreneurs, équipes esport, associations et créateurs. Du site one-page rapide au site multi-pages complet, chaque projet est pensé pour convertir et valoriser votre image.</p>
+</div>
+</html>
